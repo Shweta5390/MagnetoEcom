@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Magento Test Suite">
+    <test name="Sign In Tests">
+        <classes>
+            <class name="org.example.Execution.SignInTest">
+                <methods>
+                    <include name="testLogin"/>
+                    <include name="testValidLogin"/>
+                    <include name="testInvalidLogin"/>
+                    <include name="testLoginWithMissingFields"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Magento Add to Cart Suite">
+    <test name="Add To Cart Tests">
+        <classes>
+            <class name="org.example.Execution.AddToCartTest">
+                <methods>
+                    <include name="signInAndEnterAddressDetails"/>
+                    <include name="addRadiantTeeToCart"/>
+                    <include name="addProductToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

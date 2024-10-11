@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MagentoRegistrationSuite" parallel="false">
+
+    <test name="MagentoRegistrationTest">
+        <classes>
+            <class name="org.example.Execution.RegistrationTest">
+                <methods>
+                    <include name="registrationWithValidFields" />
+                    <include name="registrationWithMissingMandatoryFields" />
+                    <include name="registrationWithInvalidEmail" />
+                    <include name="registrationWithMissMatchPassword" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,14 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Magento Checkout Suite">
+    <test name="Checkout Tests">
+        <classes>
+            <class name="org.example.Execution.CheckoutTest">
+                <methods>
+                    <include name="signInAndAddProductToCart"/>
+                    <include name="checkoutWithProductInCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
